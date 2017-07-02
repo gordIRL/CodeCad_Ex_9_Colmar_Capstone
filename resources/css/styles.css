@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: purple;
+  background-color: white;
 }
 
 /*.main-content {
@@ -49,58 +49,62 @@ header .content {
 
 /* Header */
 header {
+  z-index: 10;
   position: fixed;
   top:0;
   left: 0;
-  z-index: 10;
   width: 100%;
   height:4rem;
   padding-left:  1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
+  background-color: white;             /*   !!  must have a background colour set !!  */
+  /*background-color: red; */
 }
 
 
 
 #desktop {
+  z-index: 10;
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: green;
+  background-color: white;             /*   !!  must have a background colour set !!  */
 }
 
 
 #desktop #logo {
-/* background-color: yellow; */
+z-index: 10;
 display: flex;
 align-items: center;
+/* background-color: yellow; */
 }
 
 
 #desktop ul {
-  background-color: gold;
   padding-right: 3rem;
+  /*background-color: gold; */
 }
 
 
 #desktop ul li  {
   display: inline;
   margin-left: 1rem;
-  background-color: pink;
+  /*background-color: pink;*/
 }
 
 
 #mobile {
+  z-index: 10;
   width:100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: green;
+  background-color: white;            /*   !!  must have a background colour set !!  */
 }
 
 
@@ -114,9 +118,10 @@ header #mobile {
 header #desktop {display:none; }
 header #mobile {display: flex;}
 body header {
+  z-index: 10;
   padding: 0rem  0rem;
   margin: 0 auto;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 }  /*  end: media query  */
 /*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
@@ -128,7 +133,7 @@ body header {
   position:  relative;
   top: 4rem; /* To offset for fixed header. */
   width:100%;
-  height:180px;  /*  180px;  */
+  height:11.25rem;  /*  180px;  */
   overflow: hidden;
 }
 
@@ -175,13 +180,13 @@ body header {
 #cta  {
   position:  relative;
   top: 4rem; /* To offset for fixed header. */
-  background-color: lime;
+  background-color: silver;
 }
 
 
 
 #cta .content  {
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;  /*32px 24px;*/
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -206,8 +211,8 @@ body header {
 #cta .information {
   width:30%;
   height:auto;
-  margin-left: 40px;
-  background-color: yellow;
+  margin-left: 2.5rem;  /*40px;*/
+  /*background-color: yellow; */
 }
 
 #cta h1 {
@@ -228,7 +233,7 @@ body header {
 #cta button {
   width:100%;
   padding:.5rem 0 .5rem 0;
-  margin-top: 24px;  /*  2.5rem;  */
+  margin-top: 1.5rem;  /*  24px;  */
   background-color: black;
   color:white;
   border: 0;
@@ -241,12 +246,12 @@ body header {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  background-color: pink;
+  /*background-color: pink;*/
 }
 
 #cta .content  {
   margin: 0 0;    /*  32px 16px;  */
-  padding: 32px 16px 32px 16px;
+  padding: 2rem 1rem 2rem 1rem;       /*32px 16px 32px 16px;*/
 }
 
 #cta .image-container {
@@ -259,7 +264,7 @@ body header {
   width:100%;
   height:auto;
   margin-left:0;
-  background-color: orange;
+  /*background-color: orange;*/
 }
 }  /*  end: media query  */
 /*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
@@ -277,7 +282,7 @@ body header {
   height:auto;
 
   overflow: auto;
-  background-color: yellow;
+  /*background-color: yellow; */
   color:black;
 }
 
@@ -286,13 +291,13 @@ body header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 32px 24px;
+  padding: 2rem  1.5rem;       /*32px 24px; */
 }
 
 #on_campus .left {
   width:60%;
   height: auto;
-  background: pink;
+  /*background: pink; */
 }
 
 #on_campus .left .image-container {
@@ -303,20 +308,24 @@ body header {
 
 #on_campus .right {
   width:100%;
-  margin-left:24px;
-  margin-top: -16px;
+  margin-left:1.5rem;      /*24px;*/
+  /* margin-top: -16px; */
   height: auto;
-  background: gray;
+  background: white;
+  border-left: 1px solid silver;
 }
 
 
 
 #on_campus .box {
 
-  min-width:423px;
-  padding-left: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  min-width:26.4375rem;      /*423px; */
+
+  padding: 1rem 0 1rem 1rem;
+
+  /*padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; */
 
   display: flex;
   flex-direction: row;
@@ -324,8 +333,8 @@ body header {
   align-items: flex-start;
 
   overflow: hidden;
-  border-bottom: 3px dotted black;
-  background-color:   aqua;
+  /*border-bottom: 3px dotted black; */
+  /*background-color:   aqua; */
 }
 
 
@@ -333,21 +342,21 @@ body header {
   /*width:35%;
   height:   auto;  */
 
-  height:168px;
+  height:10.5rem;   /*168px;*/
   width:auto;
 }
 
 
 #on_campus .background_other_color {
-  background-color: lime;
+  background-color: silver;
 }
 
 
 #on_campus .information  {
-  margin-left: 16px;
+  margin-left: 1rem;
 
   width:62%;
-  height:168px;
+  height:10.5rem;   /*168px;*/
 
   display: flex;
   flex-direction: column;
@@ -364,20 +373,20 @@ body header {
 
 
 #on_campus h1 {
-  margin: 32px 0 24px 0;
-  color:green;
+  margin:2rem 0 1.5rem 0;       /*32px 0 24px 0; */
+  /*color:green;*/
 }
 
 
 #on_campus h3 {
-  margin-bottom: 8px;
-  color:red;
+  margin-bottom: 0.5rem;  /*8px;*/
+  /*color:red;*/
 }
 
 
 #on_campus a {
-  margin-top: 8px;
-  color:red;
+  margin-top: 0.5rem;  /*8px;*/
+  /*color:red;*/
 }
 
 
@@ -394,12 +403,18 @@ body header {
 
 
 #on_campus {
-  background-color:red;
-  color:white;
+  /*background-color:red;
+  color:white;*/
 }
 
+
+#on_campus .background_other_color {
+  background-color: white;  /*red;*/
+}
+
+
 #on_campus .content {
-  padding: 16px 16px 32px  16px;
+  padding: 1rem 1rem 2rem 1rem;    /* 16px 16px 32px  16px;  */
 }
 
 
@@ -411,19 +426,21 @@ body header {
 
 #on_campus .right {
   width:100%;
-  margin-left:0px;
+  margin-left:0;
+  border-left:0;
 }
 
 
 #on_campus .box {
     width: 100%;
     min-width: 0;
-    padding: 0px;
+    padding: 0;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border-bottom: 1px solid black;
-    background-color:   lime;
+    /*border-bottom: 1px solid black; */
+    /*background-color:   lime;*/
 }
 
 
@@ -431,24 +448,24 @@ body header {
 #on_campus .right .image-container {
   width:100%;
   height:auto;
-  border: 3px solid black;
+  /*border: 3px solid black;*/
 }
 
 #on_campus img {
   width:100%;
   height: auto;
   display: block;
-  border: 3px solid green;
+  /*border: 3px solid green;*/
 }
 
 
 
 
 #on_campus .information  {
-  margin-left: 0px;
+  margin-left: 0;
   width:100%;
   height:auto;
-  background-color: navy;
+  /*background-color: navy;*/
   }
 }  /*  end: media query  */
 /*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
@@ -464,31 +481,31 @@ body header {
 #courses {
   position:  relative;
   top: 4rem; /* To offset for fixed header. */
-  padding-top: 32px;
+  padding-top: 2rem;    /*32px; */
   width:100%;
   height:auto;
-  background-color: orange;
+  /*background-color: orange;*/
   color:black;
 }
 
 
 
 #courses .content .list {
-  padding: 32px 0 32px 0;
+  padding: 2rem  0  2rem  0;   /*32px 0 32px 0;*/
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  background-color: gray;
+  background-color: silver;
 }
 
 
 #courses .container  {
   width:25%;
-  height:290px;
-  margin: 0 16px  16px 16px;
+  min-height:18.125rem;   /*290px;*/
+  margin: 0 1rem 1rem 1rem;     /*0 16px  16px 16px;*/
   background-color: white;
 }
 
@@ -508,26 +525,27 @@ body header {
 
 
 #courses .information {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 1rem 1rem 1rem;
+  /*padding-right: 16px;
   padding-bottom: 16px;
+  padding-left: 16px;*/
   /* border: 4px yellow solid; */
 }
 
 
 #courses h3  {
-  padding-top: 16px;
+  padding-top: 1rem;
   /* border: 2px solid navy; */
 }
 
 #courses h4  {
-  padding-top:8px;
-  padding-bottom: 8px;
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
   /* border: 2px solid navy; */
 }
 
 #courses p  {
-  color:red;
+  /*color:red;*/
 }
 
 
@@ -554,13 +572,13 @@ body header {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: red;
+  background-color: white;  /*red;*/
 }
 
 #courses .container  {
   width:100%;
-  height:auto;
-  margin:0px 16px 8px 16px;
+  min-height:auto;
+  margin:0 1rem 0.5rem 1rem;   /*  0px 16px 8px 16px;  */
   /* padding: 0 16px  16px 16px; */
   background-color: white;
 }
@@ -571,12 +589,13 @@ body header {
 
 #courses .information {
   padding:0;
+  background-color: silver;
 }
 
 #courses h3  {
   width:auto;
-  padding: 16px 0 16px 16px;
-  background-color: silver;
+  padding:1rem 0 1rem 1rem;     /* 16px 0 16px 16px;  */
+  /*background-color: silver;*/
 }  /* border: 2px solid navy; */
 
 
@@ -590,7 +609,7 @@ body header {
 
 #courses p  {
   display: none;
-  color:red;
+  /*color:red;*/
 }
 
 
@@ -637,14 +656,14 @@ body header {
   position:  relative;
   top: 4rem; /* To offset for fixed header. */
   height: auto;
-  background-color: aqua;
+  /*background-color: aqua;*/
   color:black;
 }
 
 
 #thesis h1 {
-  padding-top: 32px;
-  background-color: gold;
+  padding-top: 2rem;
+  /*background-color: gold;*/
 }
 
 
@@ -653,17 +672,13 @@ body header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 32px 24px;
+  padding: 2rem  1.5rem;   /*32px 24px;*/
 }
 
 #thesis .video_container {
-
-
-
-
   width:60%;
   height: auto;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 #thesis video {
@@ -672,43 +687,49 @@ body header {
 }
 
 .video_container h2 {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #thesis .right {
   width:100%;
   height: auto;
-  margin-left:24px;
-  margin-top: -16px;
-
+  margin-left:1.5rem;
+  /*margin-top: -1rem; */     /*-16px;*/
   flex-shrink: 3;
-
-  background: gray;
+  background: white;
+  border-left: 1px solid silver;
 }
 
 
 #thesis .information  {
-  margin-left: 16px;
+  margin-left: 1rem;
 
   width:62%;
-  height:    168px;
+  height:10.5rem;     /* 168px;  */
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  /*background-color: lime;*/
+}
+
+#thesis .background_other_color {
+  background-color: silver;
 }
 
 
 #thesis .box {
 
-  min-width:150px;  /*423px;  */
+  min-width:9.375rem;   /*150px; */
 
-  flex-shrink: 10;
-  padding-left: 16px;
-  padding-top: 16px;
+  /*flex-shrink: 10;*/
+
+  padding: 1rem 0 1rem 1rem;
+  /*padding-top: 16px;
   padding-bottom: 16px;
+  padding-left: 16px;*/
 
   display: flex;
   flex-direction: row;
@@ -716,21 +737,20 @@ body header {
   align-items: flex-start;
 
   overflow: hidden;
-  border-bottom: 3px dotted black;
-  background-color:   aqua;
+  /*border-bottom: 3px dotted black;*/
+  /*background-color:   aqua;*/
 }
 
 
 #thesis  .image-container {
   /*width:35%;
   height:   auto;  */
-
-  height:168px;
+  height:10.5rem;  /*168px;*/
   width:auto;
 }
 
 #thesis p {
-  margin-top: 8px;
+  margin-top: 0.5rem;
   color:black;
 }
 
@@ -743,7 +763,7 @@ body header {
 
 
 #thesis h3 {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   color:black;
 }
 
@@ -753,7 +773,7 @@ body header {
 @media only screen and (max-width:580px)  {
 
 #thesis .content {
-  padding: 0px 0px;
+  padding: 0 0;
 }
 
 #thesis .right, p, h2 {
@@ -761,7 +781,7 @@ body header {
 }
 
 #thesis .content {
-  padding: 32px 0px 0px 0px;
+  padding: 2rem  0  0  0;    /*32px 0px 0px 0px;*/
 }
 
 #thesis .video_container {
@@ -793,35 +813,36 @@ footer {
   position: relative;
   top: 4rem; /* To offset for fixed header. */
   height:100px;
-  background-color: gray;
+  background-color: white;
   color:black;
-}
+  border-top: 1px solid silver;
+  padding-top:1rem;
+  }
 
 
 
 footer .content {
   width:auto;
-  padding-left: 24px;
-  /*padding-right: 24px;*/
+  padding-left: 1.5rem;  /*24px;*/
+  padding-right: 1.5rem;
+
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-
-  color:white;
-  background-color:green;
+  /*background-color:green;*/
 }
 
 
 footer .content h3 {
-  background-color: navy;
+  /*background-color: navy;*/
 }
 
 footer li {
   display: inline;
-  margin-left: 20px;
-  background-color: gold;
+  margin-left: 1.25rem;  /*20px;*/
+  /*background-color: gold;*/
 }
 
 
@@ -831,7 +852,7 @@ footer li {
 @media only screen and (max-width:580px)  {
 
 footer {
-  margin-top: 24px;
+  padding-top: 1.5rem;  /*24px;*/
   height:auto;
   }
 
@@ -840,11 +861,11 @@ footer ul {
   }
 
 footer .content h3 {
-  padding: 16px 0 16px 0px;
+  padding:1rem 0 1rem 0;    /*16px 0 16px 0px;*/
   }
 
 footer .content {
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 }  /*  end: media query  */
