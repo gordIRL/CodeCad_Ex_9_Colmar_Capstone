@@ -1,25 +1,38 @@
-/* Universal Styles */
+/*
+Colmar Capstone Project
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Universal Styles
+ * 2.0 - Body
+ * 3.0 - Header - Desktop
+ * 3.1 - Header - Mobile
+ * 4.0 - CTA - Desktop
+ * 4.1 - CTA - Mobile
+ * 5.0 - On Campus - Desktop
+ * 5.1 - On Campus - Mobile
+ * 6.0 - Courses - Desktop
+ * 6.1 - Courses - Mobile
+ * 7.0 - Thesis - Desktop
+ * 7.1 - Thesis - Mobile
+ * 8.0 - Footer - Desktop
+ * 8.1 - Footer - Mobile
+ */
+
+
+
+
+
+/**
+ * 1.0 - Universal Styles
+ */
 
 html {
   font-size: 16px;
 }
-
-body {
-  background-color: white;
-}
-
-/*.main-content {
-  /*position:  relative; */
-  /* top: 5.3125rem; /* To offset for fixed header.  }*/
-
-
-/*
-header .content {
-  overflow: hidden;
-}
-*/
-
-
 
 .center {
   text-align: center;
@@ -29,41 +42,49 @@ header .content {
   overflow:hidden;
 }
 
-
-
 .main-content {
   width:100%;
   /* margin:0 auto; */
 }
 
-
-@media only screen and (max-width:580px)  {
+@media only screen and (max-width:580px) {
   .main-content{
     width:100%;
-  }
+}
 }
 
 
 
+/**
+ * 2.0 - Body
+ */
+
+body {
+  background-color: white;
+  font-family: 'Helvetica', sans-serif;
+}
 
 
-/* Header */
+
+/**
+ * 3.0 - Header - Desktop
+ */
+
 header {
   z-index: 10;
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
-  height:4rem;
-  padding-left:  1.5rem;
+  height: 4rem;
+  padding-left: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;             /*   !!  must have a background colour set !!  */
-  /*background-color: red; */
+  background-color: white;
+  font-size: .75rem;
+  font-weight: normal;
 }
-
-
 
 #desktop {
   z-index: 10;
@@ -72,30 +93,47 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;             /*   !!  must have a background colour set !!  */
+  background-color: white;
 }
-
 
 #desktop #logo {
 z-index: 10;
 display: flex;
 align-items: center;
-/* background-color: yellow; */
+font-family: 'Courgette', cursive;
+font-size: 1rem;
 }
 
+#desktop  .academy {
+  font-weight:500;
+  color:silver;
+}
 
 #desktop ul {
   padding-right: 3rem;
-  /*background-color: gold; */
 }
 
-
-#desktop ul li  {
+#desktop ul li {
   display: inline;
   margin-left: 1rem;
-  /*background-color: pink;*/
 }
 
+#desktop a {
+  background-color: white;
+  color:black;
+  font-size: .75rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#desktop a:hover {
+  background-color: silver;
+}
+
+
+/**
+ * 3.1 - Header - Mobile
+ */
 
 #mobile {
   z-index: 10;
@@ -104,43 +142,31 @@ align-items: center;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: white;            /*   !!  must have a background colour set !!  */
+  background-color: white;
 }
-
 
 header #mobile {
   display: none;
 }
 
-
-
-@media only screen and (max-width:580px)  {
-header #desktop {display:none; }
-header #mobile {display: flex;}
-body header {
-  z-index: 10;
-  padding: 0rem  0rem;
-  margin: 0 auto;
-  /*background-color: yellow;*/
-}
+@media only screen and (max-width:580px) {
+  header #desktop {display:none; }
+  header #mobile {display: flex;}
+  body header {
+    z-index: 10;
+    padding: 0rem  0rem;
+    margin: 0 auto;
+  }
 }  /*  end: media query  */
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
-
-
 
 
 #first-mobile-image .content {
   position:  relative;
-  top: 4rem; /* To offset for fixed header. */
+  top: 4rem;
   width:100%;
-  height:11.25rem;  /*  180px;  */
+  height:11.25rem;
   overflow: hidden;
 }
-
-
-
-
-
 
 #first-mobile-image img {
   width:100%;
@@ -148,71 +174,52 @@ body header {
   display: block;
 }
 
-
-
-
-
-
-#first-mobile-image  {
+#first-mobile-image {
   display: none;
 }
 
-
-
-@media only screen and (max-width:580px)  {
+@media only screen and (max-width:580px) {
   #first-mobile-image  {
     display: block;
-    }
+  }
 }  /*  end: media query  */
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 
 
 
 
 
+/**
+ * 4.0 - CTA - Desktop
+ */
 
-
-
-
-
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
-/* cta - Call to action */
-#cta  {
+#cta {
   position:  relative;
-  top: 4rem; /* To offset for fixed header. */
+  top: 4rem;
   background-color: silver;
 }
 
-
-
-#cta .content  {
-  padding: 2rem 1.5rem;  /*32px 24px;*/
+#cta .content {
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-
 #cta .image-container {
   width:60%;
   height: auto;
 }
-
 
 #cta img {
   width:100%;
   height: auto;
 }
 
-
-
-
 #cta .information {
   width:30%;
   height:auto;
-  margin-left: 2.5rem;  /*40px;*/
-  /*background-color: yellow; */
+  margin-left: 2.5rem;
 }
 
 #cta h1 {
@@ -221,217 +228,199 @@ body header {
   line-height: 1.3;
 }
 
-#cta h2  {
+#cta h2 {
   margin-top: 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  line-height: 1.3;
+  font-size: 1.3rem;
+  line-height: 1.2;
 }
-
-
 
 #cta button {
   width:100%;
   padding:.5rem 0 .5rem 0;
-  margin-top: 1.5rem;  /*  24px;  */
+  margin-top: 1.5rem;
   background-color: black;
   color:white;
   border: 0;
+  font-size: 1.4rem;
 }
 
 
-@media only screen and (max-width:580px)  {
-#cta {
-  width:100%;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  /*background-color: pink;*/
-}
 
-#cta .content  {
-  margin: 0 0;    /*  32px 16px;  */
-  padding: 2rem 1rem 2rem 1rem;       /*32px 16px 32px 16px;*/
-}
+/**
+ * 4.1 - CTA - Mobile
+ */
 
-#cta .image-container {
-  display: none;
-  /*width:100%;
-  height:180px; */
-}
+@media only screen and (max-width:580px) {
+  #cta {
+    width:100%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#cta .information {
-  width:100%;
-  height:auto;
-  margin-left:0;
-  /*background-color: orange;*/
-}
+  #cta .content {
+    margin: 0 0;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  #cta .image-container {
+    display: none;
+  }
+
+  #cta .information {
+    width:100%;
+    height:auto;
+    margin-left:0;
+  }
 }  /*  end: media query  */
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 
 
 
 
-#on_campus .mobile_img{
+
+/**
+ * 5.0 - On Campus - Desktop
+ */
+
+#on-campus .mobile-img {
   display: none;
 }
 
-#on_campus {
+#on-campus {
   position:  relative;
-  top: 4rem; /* To offset for fixed header. */
+  top: 4rem;
   height:auto;
-
   overflow: auto;
-  /*background-color: yellow; */
   color:black;
 }
 
-
-#on_campus .content {
+#on-campus .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem  1.5rem;       /*32px 24px; */
+  padding: 2rem  1.5rem;
 }
 
-#on_campus .left {
+#on-campus .left {
   width:60%;
   height: auto;
-  /*background: pink; */
 }
 
-#on_campus .left .image-container {
+#on-campus .left .image-container {
   width:100%;
   height: auto;
 }
 
-
-#on_campus .right {
+#on-campus .right {
   width:100%;
-  margin-left:1.5rem;      /*24px;*/
-  /* margin-top: -16px; */
+  margin: -1rem 0 0 1.5rem;
   height: auto;
   background: white;
   border-left: 1px solid silver;
 }
 
-
-
-#on_campus .box {
-
-  min-width:26.4375rem;      /*423px; */
-
+#on-campus .box {
+  min-width:26.4375rem;
   padding: 1rem 0 1rem 1rem;
-
-  /*padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem; */
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-
   overflow: hidden;
-  /*border-bottom: 3px dotted black; */
-  /*background-color:   aqua; */
 }
 
-
-#on_campus .right .image-container {
-  /*width:35%;
-  height:   auto;  */
-
-  height:10.5rem;   /*168px;*/
+#on-campus .right .image-container {
+  height:10.5rem;
   width:auto;
 }
 
-
-#on_campus .background_other_color {
+#on-campus .background-other-color {
   background-color: silver;
 }
 
-
-#on_campus .information  {
+#on-campus .information {
   margin-left: 1rem;
-
-  width:62%;
-  height:10.5rem;   /*168px;*/
-
+  min-width: 60%;
+  height:10.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-
 /* general campus  */
-#on_campus img {
+#on-campus img {
   width:100%;
   height: 100%;
 }
 
+#on-campus h2 {
+  margin:2rem 0 1.5rem 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
 
-#on_campus h1 {
-  margin:2rem 0 1.5rem 0;       /*32px 0 24px 0; */
-  /*color:green;*/
+#on-campus	.left .latin  {
+  font-style: italic;
+  font-size: .95rem;
+}
+
+#on-campus	.left .author {
+  font-size: 1.1rem;
+}
+
+#on-campus h3 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#on-campus .right p {
+  font-size: 1rem;
+}
+
+#on-campus a {
+  margin-top: 0.5rem;
 }
 
 
-#on_campus h3 {
-  margin-bottom: 0.5rem;  /*8px;*/
-  /*color:red;*/
-}
+
+/**
+ * 5.1 - On Campus - Mobile
+ */
 
 
-#on_campus a {
-  margin-top: 0.5rem;  /*8px;*/
-  /*color:red;*/
-}
+@media only screen and (max-width:580px) {
+  #on-campus .mobile-img {
+    display: block;
+  }
 
-
-
-@media only screen and (max-width:580px)  {
-#on_campus .mobile_img {
-  display: block;
-}
-
-
-#on_campus .desktop_img {
-  display: none;
-}
-
-
-#on_campus {
-  /*background-color:red;
-  color:white;*/
-}
-
-
-#on_campus .background_other_color {
-  background-color: white;  /*red;*/
-}
-
-
-#on_campus .content {
-  padding: 1rem 1rem 2rem 1rem;    /* 16px 16px 32px  16px;  */
-}
-
-
-#on_campus .left {
+  #on-campus .desktop-img {
     display: none;
-}
+  }
 
+  #on-campus {
+  }
 
+  #on-campus .background-other-color {
+    background-color: white;
+  }
 
-#on_campus .right {
-  width:100%;
-  margin-left:0;
-  border-left:0;
-}
+  #on-campus .content {
+    padding: 1rem 1rem 2rem 1rem;
+  }
 
+  #on-campus .left {
+    display: none;
+  }
 
-#on_campus .box {
+  #on-campus .right {
+    width:100%;
+    margin-left:0;
+    border-left:0;
+  }
+
+  #on-campus .box {
     width: 100%;
     min-width: 0;
     padding: 0;
@@ -439,60 +428,44 @@ body header {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /*border-bottom: 1px solid black; */
-    /*background-color:   lime;*/
-}
+  }
 
+  #on-campus .right .image-container {
+    width:100%;
+    height:auto;
+  }
 
+  #on-campus img {
+    width:100%;
+    height: auto;
+    display: block;
+  }
 
-#on_campus .right .image-container {
-  width:100%;
-  height:auto;
-  /*border: 3px solid black;*/
-}
-
-#on_campus img {
-  width:100%;
-  height: auto;
-  display: block;
-  /*border: 3px solid green;*/
-}
-
-
-
-
-#on_campus .information  {
-  margin-left: 0;
-  width:100%;
-  height:auto;
-  /*background-color: navy;*/
+  #on-campus .information {
+    margin: 1.2rem 0 0 0;
+    width:100%;
+    height:auto;
   }
 }  /*  end: media query  */
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 
 
 
 
-
-
-
-
+/**
+ * * 6.0 - Courses - Desktop
+ */
 
 #courses {
   position:  relative;
-  top: 4rem; /* To offset for fixed header. */
-  padding-top: 2rem;    /*32px; */
+  top: 4rem;
+  padding-top: 2rem;
   width:100%;
   height:auto;
-  /*background-color: orange;*/
   color:black;
 }
 
-
-
 #courses .content .list {
-  padding: 2rem  0  2rem  0;   /*32px 0 32px 0;*/
-
+  padding: 2rem  0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -501,184 +474,139 @@ body header {
   background-color: silver;
 }
 
-
-#courses .container  {
+#courses .container {
   width:25%;
-  min-height:18.125rem;   /*290px;*/
-  margin: 0 1rem 1rem 1rem;     /*0 16px  16px 16px;*/
+  min-height:18.125rem;
+  margin: 0 1rem 1rem 1rem;
   background-color: white;
 }
 
-
-#courses .image-container  {
+#courses .image-container {
   width:100%;
   height:auto;
-  /* border: 2px red solid; */
 }
 
-#courses img  {
+#courses img {
   width:100%;
   height:auto;
   overflow: hidden;
-  /* border: 2px dashed white; */
 }
-
 
 #courses .information {
   padding: 0 1rem 1rem 1rem;
-  /*padding-right: 16px;
-  padding-bottom: 16px;
-  padding-left: 16px;*/
-  /* border: 4px yellow solid; */
 }
 
-
-#courses h3  {
-  padding-top: 1rem;
-  /* border: 2px solid navy; */
-}
-
-#courses h4  {
-  padding-top:0.5rem;
-  padding-bottom: 0.5rem;
-  /* border: 2px solid navy; */
-}
-
-#courses p  {
-  /*color:red;*/
-}
-
-
-
-
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   start here  xxxxxx  */
-@media only screen and (max-width:580px)  {
-
-/*  #courses {
-  position:  relative;
-  top: 4rem; /* To offset for fixed header.
-  padding-top: 32px;
-  width:100%;
-  height:auto;
-  background-color: orange;
-  color:black;
-}  */
-
-
-
-#courses .content .list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: white;  /*red;*/
-}
-
-#courses .container  {
-  width:100%;
-  min-height:auto;
-  margin:0 1rem 0.5rem 1rem;   /*  0px 16px 8px 16px;  */
-  /* padding: 0 16px  16px 16px; */
-  background-color: white;
-}
-
-#courses .box {
-  width:100%;
-}
-
-#courses .information {
-  padding:0;
+#courses h2 {
   background-color: silver;
+  padding-top: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
 }
 
-#courses h3  {
-  width:auto;
-  padding:1rem 0 1rem 1rem;     /* 16px 0 16px 16px;  */
-  /*background-color: silver;*/
-}  /* border: 2px solid navy; */
-
-
-
-
-
-
-#courses h4  {
-  display: none;
+#courses h3 {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: hidden;
 }
 
-#courses p  {
-  display: none;
-  /*color:red;*/
+#courses h4 {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
 }
 
-
-
-#courses .image-container  {
-  display: none;
+#courses p {
+  font-size:1rem;
 }
 
 
 
+/**
+ * * 6.1 - Courses - Mobile
+ */
+
+@media only screen and (max-width:580px) {
+  #courses .content .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;  /*red;*/
+  }
+
+  #courses .container {
+    width:100%;
+    min-height:auto;
+    margin:0 1rem 0.5rem 1rem;
+    background-color: white;
+  }
+
+  #courses .box {
+    width:100%;
+  }
+
+  #courses .information {
+    padding:0;
+    background-color: silver;
+  }
+
+  #courses h3 {
+    width:auto;
+    padding:1rem 0 1rem 1rem;
+  }
+
+  #courses h2 {
+    display: block;
+    background-color: white;
+    padding-top: 2rem;
+    margin-top:-3rem;
+  }
+
+  #courses h4 {
+    display: none;
+  }
+
+  #courses p {
+    display: none;
+  }
+
+  #courses .image-container {
+    display: none;
+  }
+}  /*  end: media query  */
 
 
 
 
 
 
-
-  /*  #courses img  {
-      width:100%;
-      height:auto;
-      overflow: hidden; }
-      /* border: 2px dashed white; */
-
-
-
-
-
-
-
-
-  }  /*  end: media query  */
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
-
-
-
-
-
-
-
-
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
+/**
+ * 7.0 - Thesis - Desktop
+ */
 
 #thesis {
   position:  relative;
-  top: 4rem; /* To offset for fixed header. */
+  top: 4rem;
   height: auto;
-  /*background-color: aqua;*/
   color:black;
 }
 
-
 #thesis h1 {
   padding-top: 2rem;
-  /*background-color: gold;*/
 }
-
-
 
 #thesis .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem  1.5rem;   /*32px 24px;*/
+  padding: 2rem  1.5rem;
 }
 
-#thesis .video_container {
+#thesis .video-container {
   width:60%;
   height: auto;
-  /*background-color: yellow;*/
 }
 
 #thesis video {
@@ -686,66 +614,45 @@ body header {
   height:auto;
 }
 
-.video_container h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.video-container h2 {
+  margin: 1.5rem 0;
 }
 
 #thesis .right {
   width:100%;
   height: auto;
   margin-left:1.5rem;
-  /*margin-top: -1rem; */     /*-16px;*/
   flex-shrink: 3;
   background: white;
   border-left: 1px solid silver;
 }
 
-
-#thesis .information  {
+#thesis .information {
   margin-left: 1rem;
-
   width:62%;
-  height:10.5rem;     /* 168px;  */
-
+  height:10.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  /*background-color: lime;*/
 }
 
-#thesis .background_other_color {
+#thesis .background-other-color {
   background-color: silver;
 }
 
-
 #thesis .box {
-
-  min-width:9.375rem;   /*150px; */
-
-  /*flex-shrink: 10;*/
-
+  min-width:9.375rem;
   padding: 1rem 0 1rem 1rem;
-  /*padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 16px;*/
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-
   overflow: hidden;
-  /*border-bottom: 3px dotted black;*/
-  /*background-color:   aqua;*/
 }
 
-
 #thesis  .image-container {
-  /*width:35%;
-  height:   auto;  */
-  height:10.5rem;  /*168px;*/
+  height:10.5rem;
   width:auto;
 }
 
@@ -754,13 +661,11 @@ body header {
   color:black;
 }
 
-
 /* general campus  */
 #thesis img {
   width:100%;
   height: 100%;
 }
-
 
 #thesis h3 {
   margin-bottom: 0.5rem;
@@ -769,103 +674,82 @@ body header {
 
 
 
+/**
+ * 7.1 - Thesis - Mobile
+ */
 
-@media only screen and (max-width:580px)  {
+@media only screen and (max-width:580px) {
+  #thesis .content {
+    padding: 0 0;
+  }
 
-#thesis .content {
-  padding: 0 0;
-}
+  #thesis .right, p, h2 {
+    display: none;
+  }
 
-#thesis .right, p, h2 {
-  display: none;
-}
+  #thesis .content {
+    padding: 2rem  0  0  0;
+  }
 
-#thesis .content {
-  padding: 2rem  0  0  0;    /*32px 0px 0px 0px;*/
-}
-
-#thesis .video_container {
-  width:100%;
-}
+  #thesis .video-container {
+    width:100%;
+  }
 }  /*  end: media query  */
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 
 
 
 
+/**
+ * 8.0 - Footer - Desktop
+ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  */
 footer {
   position: relative;
-  top: 4rem; /* To offset for fixed header. */
+  top: 4rem;
   height:100px;
   background-color: white;
   color:black;
   border-top: 1px solid silver;
   padding-top:1rem;
-  }
-
-
+}
 
 footer .content {
   width:auto;
-  padding-left: 1.5rem;  /*24px;*/
-  padding-right: 1.5rem;
-
-
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  /*background-color:green;*/
 }
 
-
 footer .content h3 {
-  /*background-color: navy;*/
 }
 
 footer li {
   display: inline;
-  margin-left: 1.25rem;  /*20px;*/
-  /*background-color: gold;*/
+  margin-left: 1.25rem;
 }
 
 
-
-
+/**
+ * 8.1 - Footer - Mobile
+ */
 
 @media only screen and (max-width:580px)  {
-
-footer {
-  padding-top: 1.5rem;  /*24px;*/
-  height:auto;
+  footer {
+    padding-top: 1.5rem;
+    height:auto;
   }
 
-footer ul {
-  display: none;
+  footer ul {
+    display: none;
   }
 
-footer .content h3 {
-  padding:1rem 0 1rem 0;    /*16px 0 16px 0px;*/
+  footer .content h3 {
+    padding: 1rem 0;
   }
 
-footer .content {
-  padding-left: 1rem;
-}
-
+  footer .content {
+    padding-left: 1rem;
+  }
 }  /*  end: media query  */
