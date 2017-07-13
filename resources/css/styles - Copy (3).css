@@ -2,6 +2,7 @@
 Colmar Capstone Project
 */
 
+
 /**
  * Table of Contents
  *
@@ -20,6 +21,10 @@ Colmar Capstone Project
  * 8.0 - Footer - Desktop
  * 8.1 - Footer - Mobile
  */
+
+
+
+
 
 /**
  * 1.0 - Universal Styles
@@ -55,8 +60,8 @@ html {
  */
 
 body {
-  font-family: 'Helvetica', sans-serif;
   background-color: white;
+  font-family: 'Helvetica', sans-serif;
 }
 
 
@@ -66,25 +71,25 @@ body {
  */
 
 header {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 4rem; 
-  padding-left: 1.5rem;  
-  z-index: 10;
+  height: 4rem;
+  padding-left: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
   font-size: .75rem;
   font-weight: normal;
-  background-color: white;
 }
 
 #desktop {
+  z-index: 10;
   width: 100%;
   height: auto;
-  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -113,12 +118,12 @@ font-size: 1rem;
   margin-left: 1rem;
 }
 
-#desktop a {  
+#desktop a {
+  background-color: white;
+  color:black;
   font-size: .75rem;
   font-weight: normal;
   text-decoration: none;
-  color:black;
-  background-color: white;
 }
 
 #desktop a:hover {
@@ -131,9 +136,9 @@ font-size: 1rem;
  */
 
 #mobile {
+  z-index: 10;
   width:100%;
   height: auto;
-  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -147,10 +152,10 @@ header #mobile {
 @media only screen and (max-width:580px) {
   header #desktop {display:none; }
   header #mobile {display: flex;}
-  body header {    
-    padding: 0 0;
+  body header {
+    z-index: 10;
+    padding: 0rem  0rem;
     margin: 0 auto;
-	z-index: 10;
   }
 }  /*  end: media query  */
 
@@ -164,9 +169,9 @@ header #mobile {
 }
 
 #first-mobile-image img {
-  display: block;
   width:100%;
   height: auto;
+  display: block;
 }
 
 #first-mobile-image {
@@ -233,10 +238,10 @@ header #mobile {
   width:100%;
   padding:.5rem 0 .5rem 0;
   margin-top: 1.5rem;
-  font-size: 1.4rem;
+  background-color: black;
   color:white;
   border: 0;
-  background-color: black;
+  font-size: 1.4rem;
 }
 
 
@@ -248,9 +253,9 @@ header #mobile {
 @media only screen and (max-width:580px) {
   #cta {
     width:100%;
-	margin-left: auto;
-    margin-right: auto;	
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #cta .content {
@@ -285,15 +290,15 @@ header #mobile {
   position:  relative;
   top: 4rem;
   height:auto;
-  color:black;
   overflow: auto;
+  color:black;
 }
 
 #on-campus .content {
-  padding: 2rem  1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 2rem  1.5rem;
 }
 
 #on-campus .left {
@@ -308,8 +313,8 @@ header #mobile {
 
 #on-campus .right {
   width:100%;
-  height: auto;
   margin: -1rem 0 0 1.5rem;
+  height: auto;
   background: white;
   border-left: 1px solid silver;
 }
@@ -375,7 +380,7 @@ header #mobile {
 }
 
 #on-campus a {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 
@@ -431,15 +436,15 @@ header #mobile {
   }
 
   #on-campus img {
-	display: block;
     width:100%;
     height: auto;
+    display: block;
   }
 
   #on-campus .information {
+    margin: 1.2rem 0 0 0;
     width:100%;
     height:auto;
-	margin: 1.2rem 0 0 0;
   }
 }  /*  end: media query  */
 
@@ -491,12 +496,12 @@ header #mobile {
   padding: 0 1rem 1rem 1rem;
 }
 
-#courses h2 {  
+#courses h2 {
+  background-color: silver;
   padding-top: 2rem;
   font-weight: bold;
   font-size: 2rem;
   color: black;
-  background-color: silver;
 }
 
 #courses h3 {
@@ -507,7 +512,7 @@ header #mobile {
 }
 
 #courses h4 {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 1.2rem;
 }
 
@@ -528,13 +533,13 @@ header #mobile {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: white;  
+    background-color: white;  /*red;*/
   }
 
   #courses .container {
     width:100%;
     min-height:auto;
-    margin:0 1rem .5rem 1rem;
+    margin:0 1rem 0.5rem 1rem;
     background-color: white;
   }
 
@@ -553,10 +558,10 @@ header #mobile {
   }
 
   #courses h2 {
-    display: block;    
+    display: block;
+    background-color: white;
     padding-top: 2rem;
     margin-top:-3rem;
-	background-color: white;
   }
 
   #courses h4 {
@@ -587,7 +592,7 @@ header #mobile {
   height: auto;
   color:black;
 }
-
+/*  ?????????????????????????????????????????????????????????????  */
 #thesis h1 {
   padding-top: 2rem;
   font-weight: bold;
@@ -595,10 +600,10 @@ header #mobile {
 }
 
 #thesis .content {
-  padding: 2rem  1.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center;
+  padding: 2rem  1.5rem;
 }
 
 #thesis .video-container {
@@ -620,14 +625,14 @@ header #mobile {
   height: auto;
   margin-left:1.5rem;
   flex-shrink: 3;
-  background-color: white;
+  background: white;
   border-left: 1px solid silver;
 }
 
-#thesis .information {  
+#thesis .information {
+  margin-left: 1rem;
   width:62%;
   height:10.5rem;
-  margin-left: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -703,10 +708,10 @@ footer {
   position: relative;
   top: 4rem;
   height:100px;
-  padding-top:1rem;  
+  background-color: white;
   color:black;
   border-top: 1px solid silver;
-  background-color: white;  
+  padding-top:1rem;
 }
 
 footer .content {
@@ -733,8 +738,8 @@ footer li {
 
 @media only screen and (max-width:580px)  {
   footer {
-	height:auto;
-    padding-top: 1.5rem;    
+    padding-top: 1.5rem;
+    height:auto;
   }
 
   footer ul {
