@@ -7,17 +7,22 @@
   <meta name="description" content="main page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Courgette|Raleway:700" rel="stylesheet">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
   <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
-
 <body>
   <!-- Header -->
   <header>
     <div id="desktop" role="presentation">
-      <div id="logo">
+      <a href="#" id="logo"  class="btn btn-default btn-sm">
         <div id="desk-pic">
           <img src="./resources/images/ic-logo.svg" alt="logo">
         </div>
@@ -27,25 +32,24 @@
           <span class="academy">ACADEMY</span>
         </div>
         <!--  end: title  -->
-      </div>
+      </a>
       <!-- end: logo  -->
       <ul>
-        <li><a href="#on-campus">On Campus</a></li>
-        <li><a href="#courses">Online</a></li>
-        <li><a href="#thesis">For&nbsp;Companies</a></li>
-        <li><a href="#">Sign&nbsp;In</a></li>
+        <li><a class="btn btn-default btn-xm"  href="#on-campus">On Campus</a></li>
+        <li><a class="btn btn-default btn-xm"  href="#courses">Online</a></li>
+        <li><a class="btn btn-default btn-xm"  href="#thesis">For&nbsp;Companies</a></li>
+        <li><a class="btn btn-default btn-xm"  href="#">Sign&nbsp;In</a></li>
       </ul>
     </div>
     <!-- end: desktop  -->
     <div id="mobile">
-      <a href="#">		   <img src="./resources/images/ic-logo.svg"       alt="logo"></a>
-      <a href="#on-campus"><img src="./resources/images/ic-on-campus.svg"  alt="on campus"></a>
-      <a href="#thesis">   <img src="./resources/images/ic-online.svg"     alt="our companies"></a>
-      <a href="#">         <img src="./resources/images/ic-login.svg"      alt="sign in"></a>
+      <a class="btn btn-default btn-xm"   href="#">         <img src="./resources/images/ic-logo.svg"       alt="logo"></a>
+      <a class="btn btn-default btn-xm"   href="#on-campus"><img src="./resources/images/ic-on-campus.svg"  alt="on campus"></a>
+      <a class="btn btn-default btn-xm"   href="#thesis">   <img src="./resources/images/ic-online.svg"     alt="our companies"></a>
+      <a class="btn btn-default btn-xm"   href="#">         <img src="./resources/images/ic-login.svg"      alt="sign in"></a>
     </div>
     <!-- end: mobile  -->
   </header>
-
   <!-- Main Content -->
   <!-- first-mobile-image  -->
   <div id="first-mobile-image" class="main-content" role="presentation">
@@ -58,7 +62,6 @@
     <!--end: content  -->
   </div>
   <!--end: first-mobile-image  -->
-
   <!-- Call To Action - cta   -->
   <div id="cta" class="main-content" role="presentation">
     <div class="content">
@@ -69,14 +72,13 @@
       <div class="information">
         <h1>Learn something<br>new everyday</h1>
         <h2>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</h2>
-        <button>Start here</button>
+        <a href="#" class="btn btn-primary btn-lg" >Start here</a>
       </div>
       <!-- end: information  -->
     </div>
     <!--end: content  -->
   </div>
   <!--end: cta  -->
-
   <div id="on-campus" class="main-content">
     <div class="content">
       <div class="left">
@@ -85,12 +87,11 @@
         </div>
         <!--  end: image-container  -->
         <h2>It doesn't hurt to keep practicing</h2>
-        <p class="latin">Curabitur porta nunc sapien, ac auctor leo commodo sit amet. Proin sed nisi vitae leo tempus dictum. Quisque vestibulum vel nisi id luctus. Donec quis lacus vel lacus interdum consequat.
+        <p class="latin courgette">Curabitur porta nunc sapien, ac auctor leo commodo sit amet. Proin sed nisi vitae leo tempus dictum. Quisque vestibulum vel nisi id luctus. Donec quis lacus vel lacus interdum consequat.
         </p><br>
         <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
       </div>
       <!-- end: left  -->
-
       <!-- on campus right  -->
       <div class="right">
 
@@ -108,7 +109,6 @@
           <!--  end:  information  -->
         </div>
         <!--  end: box  -->
-
         <div class="box">
           <div class="image-container">
             <img class="desktop-img" src="./resources/images/information-campus.jpg" alt="lecture hall with large map on the wall">
@@ -123,7 +123,6 @@
           <!--  end:  information  -->
         </div>
         <!--  end: box  -->
-
         <div class="box  background-other-color ">
           <div class="image-container">
             <img class="desktop-img" src="./resources/images/information-guest-lecture.jpg" alt="photograph of guest lecturer">
@@ -144,12 +143,10 @@
     <!--end: content  -->
   </div>
   <!--end: on_campus  -->
-
   <div id="courses" class="main-content" role="presentation">
     <div class="content">
       <h2 class="center">Courses - Start Learning</h2>
       <div class="list">
-
         <div class="container">
           <div class="box">
             <div class="image-container">
@@ -157,7 +154,7 @@
             </div>
             <!--  end: image-container  -->
             <div class="information">
-              <h3>Software&nbsp;engineering</h3>
+              <h3>Software engineering</h3>
               <h4>Courses</h4>
               <p>Web development, Mobile Development, iOT, Apis</p>
             </div>
@@ -166,7 +163,6 @@
           <!--  end: box  -->
         </div>
         <!--  end:  container  -->
-
         <div class="container">
           <div class="box">
             <div class="image-container">
@@ -174,7 +170,7 @@
             </div>
             <!--  end: image-container  -->
             <div class="information">
-              <h3>Computer&nbsp;Art</h3>
+              <h3>Computer Art</h3>
               <h4>Courses</h4>
               <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
             </div>
@@ -183,7 +179,6 @@
           <!--  end: box  -->
         </div>
         <!--  end:  container  -->
-
         <div class="container">
           <div class="box">
             <div class="image-container">
@@ -200,7 +195,6 @@
           <!--  end: box  -->
         </div>
         <!--  end:  container  -->
-
         <div class="container">
           <div class="box">
             <div class="image-container">
@@ -217,7 +211,6 @@
           <!--  end: box  -->
         </div>
         <!--  end:  container  -->
-
         <div class="container">
           <div class="box">
             <div class="image-container">
@@ -234,7 +227,6 @@
           <!--  end: box  -->
         </div>
         <!--  end:  container  -->
-
         <div class="container">
           <div class="box">
             <div class="image-container">
@@ -257,7 +249,6 @@
     <!--end: content  -->
   </div>
   <!--end: courses  -->
-
   <div id="thesis" class="main-content" role="presentation">
     <h1 class="center">Thesis Exhibit</h1>
     <div class="content">
@@ -267,12 +258,11 @@
                           Your browser does not support the video tag.
         </video>
         <h2>Reimagine urban</h2>
-        <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+        <p class="courgette"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
           quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </p>
       </div>
       <!-- end: video_container  -->
-
       <div class="right">
         <div class="box     background-other-color">
           <div class="image-container">
@@ -286,7 +276,6 @@
           <!--  end:  information  -->
         </div>
         <!--  end: box  -->
-
         <div class="box">
           <div class="image-container">
             <img src="./resources/images/thesis-now-and-then.jpg" alt="New York City skyline">
@@ -305,7 +294,6 @@
     <!--end: content  -->
   </div>
   <!--end: thesis  -->
-
   <footer class="main-content" role="presentation">
     <div class="content">
       <h3>&copy; 2016 Colmar Academy. All rights reserved</h3>
@@ -317,6 +305,5 @@
     <!--  end:  content  -->
   </footer>
   <!--  end:  footer  -->
-
 </body>
 </html>
